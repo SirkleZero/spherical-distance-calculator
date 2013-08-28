@@ -3,7 +3,7 @@
 namespace SphericalDistanceCalculator
 {
     /// <summary>
-    /// An implementation of a spherical distance calculator based a special case of the Vincenty formula.
+    /// An implementation of a spherical distance calculator based on a special case of the Vincenty formula.
     /// </summary>
     public sealed class Arctan2Calculator : ICalculator
     {

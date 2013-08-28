@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SphericalDistanceCalculator", "SphericalDistanceCalculator\SphericalDistanceCalculator.csproj", "{EDBF26A7-0E50-46CF-9514-17F7EE1D2CE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harness", "Console\Harness.csproj", "{FFB0F917-0BFD-4C9B-AED0-AE7610E0C3DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDBF26A7-0E50-46CF-9514-17F7EE1D2CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDBF26A7-0E50-46CF-9514-17F7EE1D2CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDBF26A7-0E50-46CF-9514-17F7EE1D2CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDBF26A7-0E50-46CF-9514-17F7EE1D2CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB0F917-0BFD-4C9B-AED0-AE7610E0C3DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB0F917-0BFD-4C9B-AED0-AE7610E0C3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB0F917-0BFD-4C9B-AED0-AE7610E0C3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB0F917-0BFD-4C9B-AED0-AE7610E0C3DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

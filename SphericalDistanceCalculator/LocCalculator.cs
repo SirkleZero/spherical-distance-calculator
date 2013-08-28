@@ -22,9 +22,14 @@ namespace SphericalDistanceCalculator
         /// <returns>A <see cref="Distance"/> object that represents the distance calculated.</returns>
         public Distance Calculate(Coordinate origin, Coordinate destination)
         {
+            // calculate the longitude delta in absolute radians
             double longitudeDelta = Math.Abs(destination.Longitude.ToRadians() - origin.Longitude.ToRadians());
 
-            double angularDistance = Math.Acos(Math.Sin(origin.Latitude.ToRadians()) * Math.Sin(destination.Latitude.ToRadians()) + Math.Cos(origin.Latitude.ToRadians()) * Math.Cos(destination.Latitude.ToRadians()) * Math.Cos(longitudeDelta));
+            // convert the latitudes to radians
+            double originLatitudeRadians = origin.Latitude.ToRadians();
+            double destinationLatitudeRadians = destination.Latitude.ToRadians();
+
+            double angularDistance = Math.Acos(Math.Sin(originLatitudeRadians) * Math.Sin(destinationLatitudeRadians) + Math.Cos(originLatitudeRadians) * Math.Cos(destinationLatitudeRadians) * Math.Cos(longitudeDelta));
 
             double distance = CalculatorFactory.EarthRadiusInMeters * angularDistance;
 
